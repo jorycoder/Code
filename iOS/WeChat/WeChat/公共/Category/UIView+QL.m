@@ -1,0 +1,44 @@
+//
+//  UIView+QL.m
+//  WeChat
+//
+//  Created by QiLi on 16/9/8.
+//  Copyright © 2016年 qili. All rights reserved.
+//
+
+#import "UIView+QL.h"
+
+@implementation UIView (QL)
+
+-(void)setH:(float)h{
+    CGRect frm = self.frame;
+    frm.size.height = h;
+    self.frame = frm;
+}
+
+-(float)h{
+    return self.frame.size.height;
+}
+
+-(void)setW:(float)w{
+    CGRect frm = self.frame;
+    frm.size.width = w;
+    self.frame = frm;
+}
+
+-(float)w{
+    return self.frame.size.width;
+}
+
+-(void)setY:(float)y{
+    CGRect frm = self.frame;
+    frm.origin.y = y;
+    self.frame = frm;
+    
+}
+
+
+-(float)y{
+    return self.frame.origin.y;
+}
+@end

@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  WeChat
+//
+//  Created by apple on 16/9/9.
+//  Copyright (c) 2016年 qili. All rights reserved.
+//
+
+#ifndef WeChat_PrefixHeader_pch
+#define WeChat_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import "CategoryQL.h"
+#import "MBProgressHUD+HM.h"
+#import "QLUserInfo.h"
+#import "QLXMPPTool.h"
+
+// 自定义Log
+#ifdef DEBUG
+
+#define QLLog(...) NSLog(@"%s %d \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+
+#else
+#define WCLog(...)
+
+#endif
+
+
+#endif

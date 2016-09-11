@@ -1,0 +1,41 @@
+//
+//  PrefixHeader.pch
+//  新浪微博
+//
+//  Created by QiLi on 16/7/11.
+//  Copyright © 2016年 QiLi. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+/************* 文件导入 ***********/
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "UIWindow+Extension.h"
+#import "NSDate+Extension.h"
+#import "NSString+Extension.h"
+#import "NSString+Emoji.h"
+#import "UITextView+Extension.h"
+#import "QLConst.h"
+#import "MJRefresh.h"
+
+/************* 便利方法 ***********/
+// 系统版本
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+// 通知中心
+#define QLNotificationCenter [NSNotificationCenter defaultCenter]
+
+#ifdef DEBUG // 处于开发阶段
+#define QLLog(...) NSLog(__VA_ARGS__)
+#else // 处于发布阶段
+#define QLLog(...)
+#endif
+
+// RGB颜色
+#define QLColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 随机色
+#define QLRandomColor QLColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+#endif /* PrefixHeader_pch */
