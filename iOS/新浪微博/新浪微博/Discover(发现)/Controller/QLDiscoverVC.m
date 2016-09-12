@@ -75,7 +75,7 @@
          
      }else if (indexPath.row % 4 == 2)
      {
-         cell.detailTextLabel.text = [NSString stringWithFormat:@"发微博页面：自定义了键盘，支持表情发送哦"];
+         cell.detailTextLabel.text = [NSString stringWithFormat:@"发微博页面：自定义键盘，支持表情发送"];
          cell.textLabel.text = [NSString stringWithFormat:@""];
          
      }else
