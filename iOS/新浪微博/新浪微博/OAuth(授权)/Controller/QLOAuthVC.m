@@ -34,24 +34,25 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [webView loadRequest:request];
     
-    // 3. 提示View
-    UITextView *tipView = [[UITextView alloc] init];
-    tipView.width = webView.width * 0.8;
-    tipView.height = 90;
-    tipView.centerX = webView.centerX;
-    tipView.centerY = webView.centerY;
-
-    tipView.text = @"用户名: 17051007232\n\n密码:qili1705100";
-    tipView.font = [UIFont systemFontOfSize:17];
-    tipView.textAlignment = NSTextAlignmentCenter;
-    tipView.backgroundColor = [UIColor redColor];
-    [webView addSubview:tipView];
+    
 }
 
 #pragma mark - webView代理方法
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [MBProgressHUD hideHUD];
+    // 3. 提示View
+    UITextView *tipView = [[UITextView alloc] init];
+    tipView.width = webView.width * 0.8;
+    tipView.height = 90;
+    tipView.centerX = webView.centerX;
+    tipView.centerY = webView.centerY;
+    
+    tipView.text = @"用户名: 17051007232\n\n密码:qili1705100";
+    tipView.font = [UIFont systemFontOfSize:17];
+    tipView.textAlignment = NSTextAlignmentCenter;
+    tipView.backgroundColor = [UIColor redColor];
+    [webView addSubview:tipView];
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView

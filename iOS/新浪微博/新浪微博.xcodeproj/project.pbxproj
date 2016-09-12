@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3902BE2A1D3329C400D7746B /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3902BE291D3329C400D7746B /* libicucore.tbd */; };
-		3902C3761D332F6600D7746B /* QLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3902C3751D332F6600D7746B /* QLAppDelegate.m */; };
 		395E14621D33224300BAD569 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 395E14611D33224300BAD569 /* main.m */; };
 		395E146D1D33224300BAD569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395E146C1D33224300BAD569 /* Assets.xcassets */; };
 		395E14701D33224300BAD569 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395E146E1D33224300BAD569 /* LaunchScreen.storyboard */; };
@@ -116,12 +115,11 @@
 		3976701E1D34ABCA00037EEE /* QLEmotionTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3976701D1D34ABCA00037EEE /* QLEmotionTabBarButton.m */; };
 		397670211D34ABD500037EEE /* QLEmotionTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 397670201D34ABD400037EEE /* QLEmotionTextView.m */; };
 		397670241D34ABD500037EEE /* QLDiscoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 397670231D34ABD500037EEE /* QLDiscoverVC.m */; };
+		39F575ED1D863066008EA419 /* QLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F575EC1D863066008EA419 /* QLAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3902BE291D3329C400D7746B /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
-		3902C3741D332F6600D7746B /* QLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLAppDelegate.h; sourceTree = "<group>"; };
-		3902C3751D332F6600D7746B /* QLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLAppDelegate.m; sourceTree = "<group>"; };
 		395E145D1D33224300BAD569 /* 新浪微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "新浪微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		395E14611D33224300BAD569 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		395E146C1D33224300BAD569 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -334,6 +332,8 @@
 		397670201D34ABD400037EEE /* QLEmotionTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLEmotionTextView.m; sourceTree = "<group>"; };
 		397670221D34ABD500037EEE /* QLDiscoverVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLDiscoverVC.h; sourceTree = "<group>"; };
 		397670231D34ABD500037EEE /* QLDiscoverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLDiscoverVC.m; sourceTree = "<group>"; };
+		39F575EB1D863066008EA419 /* QLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QLAppDelegate.h; sourceTree = "<group>"; };
+		39F575EC1D863066008EA419 /* QLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QLAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,20 +367,16 @@
 		395E145F1D33224300BAD569 /* 新浪微博 */ = {
 			isa = PBXGroup;
 			children = (
-				395E14771D33227C00BAD569 /* 发微博 */,
-				395E14991D33227C00BAD569 /* 发现 */,
-				395E149F1D33227C00BAD569 /* 首页 */,
-				395E14C41D33227C00BAD569 /* 主要 */,
-				395E15581D33227D00BAD569 /* 消息 */,
+				39F575EB1D863066008EA419 /* QLAppDelegate.h */,
+				39F575EC1D863066008EA419 /* QLAppDelegate.m */,
 				395E155E1D33227D00BAD569 /* 新特性 */,
 				395E15621D33227D00BAD569 /* 授权 */,
+				395E149F1D33227C00BAD569 /* 首页 */,
+				395E14771D33227C00BAD569 /* 发微博 */,
+				395E14991D33227C00BAD569 /* 发现 */,
+				395E14C41D33227C00BAD569 /* 主要 */,
+				395E15581D33227D00BAD569 /* 消息 */,
 				395E156C1D33227D00BAD569 /* 我 */,
-				3902BE291D3329C400D7746B /* libicucore.tbd */,
-				396FEF211D853D8300F28F3A /* EmotionIcons */,
-				395E146C1D33224300BAD569 /* Assets.xcassets */,
-				395E146E1D33224300BAD569 /* LaunchScreen.storyboard */,
-				395E14711D33224300BAD569 /* Info.plist */,
-				395E17B21D33230D00BAD569 /* PrefixHeader.pch */,
 				395E14601D33224300BAD569 /* Supporting Files */,
 			);
 			path = "新浪微博";
@@ -389,7 +385,13 @@
 		395E14601D33224300BAD569 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				395E146C1D33224300BAD569 /* Assets.xcassets */,
+				395E146E1D33224300BAD569 /* LaunchScreen.storyboard */,
+				396FEF211D853D8300F28F3A /* EmotionIcons */,
+				3902BE291D3329C400D7746B /* libicucore.tbd */,
 				395E14611D33224300BAD569 /* main.m */,
+				395E14711D33224300BAD569 /* Info.plist */,
+				395E17B21D33230D00BAD569 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -747,8 +749,6 @@
 		395E15441D33227D00BAD569 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				3902C3741D332F6600D7746B /* QLAppDelegate.h */,
-				3902C3751D332F6600D7746B /* QLAppDelegate.m */,
 				39766FE11D3337ED00037EEE /* QLConst.h */,
 				39766FE21D3337ED00037EEE /* QLConst.m */,
 			);
@@ -978,6 +978,7 @@
 				395E15CC1D33227D00BAD569 /* SDWebImageDownloader.m in Sources */,
 				395E15B61D33227D00BAD569 /* MJIvar.m in Sources */,
 				395E15AE1D33227D00BAD569 /* AFURLResponseSerialization.m in Sources */,
+				39F575ED1D863066008EA419 /* QLAppDelegate.m in Sources */,
 				396FEEF91D373AE400F28F3A /* UIBarButtonItem+Extension.m in Sources */,
 				395E15D11D33227D00BAD569 /* UIImage+GIF.m in Sources */,
 				396FEECD1D372D6C00F28F3A /* QLTextPart.m in Sources */,
@@ -994,7 +995,6 @@
 				395E15BA1D33227D00BAD569 /* MJTypeEncoding.m in Sources */,
 				396FEF171D373F4C00F28F3A /* QLAccountTool.m in Sources */,
 				395E15B31D33227D00BAD569 /* MJArgument.m in Sources */,
-				3902C3761D332F6600D7746B /* QLAppDelegate.m in Sources */,
 				395E15B71D33227D00BAD569 /* MJMember.m in Sources */,
 				396FEF1A1D373F5800F28F3A /* QLNewfeatureVC.m in Sources */,
 				396FEECA1D372D6200F28F3A /* QLStatusFrame.m in Sources */,
@@ -1153,7 +1153,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "新浪微博/PrefixHeader.pch";
 				INFOPLIST_FILE = "新浪微博/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "QiLi.----";
@@ -1167,7 +1167,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "新浪微博/PrefixHeader.pch";
 				INFOPLIST_FILE = "新浪微博/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "QiLi.----";
