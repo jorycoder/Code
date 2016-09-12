@@ -25,7 +25,7 @@
     
     // 2.设置根控制器
     QLAccount *account = [QLAccountTool account];
-    if (!account) { // 之前已经登录成功过
+    if (account) { // 之前已经登录成功过
         [self.window switchRootViewController];
     } else {
         self.window.rootViewController = [[QLOAuthVC alloc] init];
